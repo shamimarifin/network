@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme{
+    --color-primary: #F857A6;
+    --color-secondary: #EF3F6E;
+    --color-text : rgba(96, 105, 123, 1);
+    --color-heading-text : rgba(52, 63, 82, 1);
+    --font-primary : "Urbanist", sans-serif;
+}
