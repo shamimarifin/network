@@ -1,9 +1,60 @@
 @import "tailwindcss";
 
-@theme{
-    --color-primary: #F857A6;
-    --color-secondary: #EF3F6E;
-    --color-text : rgba(96, 105, 123, 1);
-    --color-heading-text : rgba(52, 63, 82, 1);
-    --font-primary : "Urbanist", sans-serif;
+@theme {
+  --color-primary: #f857a6;
+  --color-secondary: #ef3f6e;
+  --color-text: rgba(96, 105, 123, 1);
+  --color-heading-text: rgba(52, 63, 82, 1);
+  --font-primary: "Urbanist", sans-serif;
+}
+
+@layer {
+  .section-container {
+    @apply max-w-[1440px] container mx-auto px-4 py-16;
+  }
+
+  .btn{
+    @apply bg-gradient-to-r from-primary to-secondary px-5 py-3 hover:bg-gradient-to-l transition duration-500 text-white rounded-lg mt-5 inline-block;
+  }
+}
+
+.main-menu ul li a {
+  position: relative;
+}
+
+.main-menu ul li a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: -6px;
+  background-color: var(--color-primary);
+  transition: width 0.3s;
+}
+
+.main-menu ul li a:hover::after {
+  width: 100%;
+}
+
+/* Article Slider CSS */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.swiper-pagination-bullet{
+    margin-top: 100px !important;
 }

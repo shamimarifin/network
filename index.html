@@ -13,12 +13,19 @@
       href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- Style CSS Link -->
     <link rel="stylesheet" href="./src/output.css" />
   </head>
   <body class="font-primary">
     <!-- Header Section Start -->
-    <header class="">
+    <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
       <nav
         class="max-w-[1440px] container mx-auto flex justify-between item-center px-4 py-4"
       >
@@ -30,7 +37,7 @@
         </div>
 
         <!-- Main Menu -->
-        <div>
+        <div class="main-menu hidden md:block">
           <ul class="flex gap-6 item-center">
             <li><a href="#home" class="font-semibold text-lg">Home</a></li>
             <li>
@@ -57,25 +64,626 @@
     <!-- Header Section End -->
 
     <!-- Hero Section Start -->
-    <section class="bg-[url('hero.png')] bg-cover bg-center md:h-[600px] h-900px w-full">
+    <section class="bg-[url('hero.png')] bg-cover bg-center py-5 w-full">
       <div
-        class="max-w-[1440px] mx-auto flex flex-col md:flex-row item-center justify-between gap-8 items-center "
+        class="max-w-[1440px] mx-auto flex flex-col md:flex-row item-center justify-between gap-8 items-center"
       >
         <!-- Left Content -->
-        <div class="pt-[200px]">
-          <h2 class="text-2xl md:text-4xl lg:text-6xl font-medium">Networking <span>solutions</span> for <br> worldwide communication</h2>
+        <div class="text-center md:text-start">
+          <h2 class="text-2xl md:text-4xl lg:text-6xl font-medium">
+            Networking <span>solutions</span> for <br />
+            worldwide communication
+          </h2>
           <p class="text-text py-5 md:text-lg">
-            We're a company that focuses on establishing <br> long-term relationships
-            with customers.
+            We're a company that focuses on establishing <br />
+            long-term relationships with customers.
           </p>
-          <a href="#" class="bg-gradient-to-r from-primary to-secondary px-5 py-3 hover:bg-gradient-to-l transition duration-500 hover:translate-y-2 text-white rounded-lg mt-5 inline-block">Explore Now</a>
+          <a href="#" class="btn">Explore Now</a>
         </div>
         <!-- Right Content -->
         <div class="">
-            <img src="./assets/network.png" alt="" class="absolute bottom-40 right-40">
+          <img src="./assets/network.png" alt="" class="mt-10" />
         </div>
       </div>
     </section>
     <!-- Hero Section End -->
+
+    <!-- Features Section Start -->
+
+    <section class="section-container">
+      <!-- Section Header Title Start -->
+      <div class="md:w-2/3 w-full mx-auto text-center space-y-4">
+        <h4 class="text-primary text-lg uppercase font-semibold">
+          Our Features
+        </h4>
+        <p class="md:text-4xl text-2xl font-semibold text-heading-text">
+          The service we offer is specifically <br />
+          designed to meet your needs.
+        </p>
+      </div>
+      <!-- Section Header Title End -->
+
+      <!-- Features Item Section Start -->
+      <div class="grid grid-cols-1 md:grid-cols-3 pt-8 space-y-6">
+        <div class="flex gap-4 justify-between p-5">
+          <div>
+            <img src="./assets/6.png" alt="" class="w-16" />
+          </div>
+          <div class="content">
+            <h3 class="font-bold text-lg mb-2">Software & Integration</h3>
+            <p class="text-text">
+              Duis mollis gravida commodo id luctus erat porttitor ligula, eget
+              lacinia odio sem aget elit nullam quis risus eget.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 justify-between p-5">
+          <div>
+            <img src="./assets/5.png" alt="" class="w-16" />
+          </div>
+          <div class="content">
+            <h3 class="font-bold text-lg mb-2">Network Security</h3>
+            <p class="text-text">
+              Duis mollis gravida commodo id luctus erat porttitor ligula, eget
+              lacinia odio sem aget elit nullam quis risus eget.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 justify-between p-5">
+          <div>
+            <img src="./assets/4.png" alt="" class="w-16" />
+          </div>
+          <div class="content">
+            <h3 class="font-bold text-lg mb-2">Cloud Services</h3>
+            <p class="text-text">
+              Duis mollis gravida commodo id luctus erat porttitor ligula, eget
+              lacinia odio sem aget elit nullam quis risus eget.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 justify-between p-5">
+          <div>
+            <img src="./assets/3.png" alt="" class="w-16" />
+          </div>
+          <div class="content">
+            <h3 class="font-bold text-lg mb-2">Wireless Networking</h3>
+            <p class="text-text">
+              Duis mollis gravida commodo id luctus erat porttitor ligula, eget
+              lacinia odio sem aget elit nullam quis risus eget.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 justify-between p-5">
+          <div>
+            <img src="./assets/2.png" alt="" class="w-16" />
+          </div>
+          <div class="content">
+            <h3 class="font-bold text-lg mb-2">IT Solutions</h3>
+            <p class="text-text">
+              Duis mollis gravida commodo id luctus erat porttitor ligula, eget
+              lacinia odio sem aget elit nullam quis risus eget.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 justify-between p-5">
+          <div>
+            <img src="./assets/1.png" alt="" class="w-16" />
+          </div>
+          <div class="content">
+            <h3 class="font-bold text-lg mb-2">Server Configuration</h3>
+            <p class="text-text">
+              Duis mollis gravida commodo id luctus erat porttitor ligula, eget
+              lacinia odio sem aget elit nullam quis risus eget.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features Section End -->
+
+    <!-- About Project Planner Start -->
+    <section class="section-container relative">
+      <div
+        class="flex justify-between items-center flex-wrap flex-col md:flex-row gap-5 space-y-10 p-2"
+      >
+        <!-- Left Content -->
+        <div class="basis-[48%]">
+          <img src="./assets/about.png" alt="" />
+        </div>
+        <!-- Right Content -->
+        <div class="basis-[48%]">
+          <!-- Section Header Title Start -->
+          <div class="w-full mx-auto space-y-4">
+            <h4 class="text-primary text-lg uppercase font-semibold">
+              Have Perfect Control
+            </h4>
+            <p class="md:text-4xl text-2xl font-semibold text-heading-text">
+              We bring solutions to make life easier for our customers.
+            </p>
+          </div>
+          <!-- Section Header Title End -->
+
+          <div class="content-box py-5">
+            <p class="text-text text-lg">
+              Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in,
+              egestas eget quam. Praesent commodo cursus magna, vel scelerisque
+              nisl consectetur et. Vivamus sagittis lacus vel augue rutrum.
+            </p>
+
+            <ul class="columns-2 mt-8 space-y-5 list-disc text-text text-lg">
+              <li>Aenean quam ornare. Curabitur blandit.</li>
+              <li>Aenean quam ornare. Curabitur blandit.</li>
+              <li>Aenean quam ornare. Curabitur blandit.</li>
+              <li>Aenean quam ornare. Curabitur blandit.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-between items-center flex-wrap gap-5 md:flex-row-reverse flex-col p-2"
+      >
+        <!-- Left Content -->
+        <div class="basis-[48%]">
+          <img src="./assets/client.png" alt="" />
+        </div>
+        <!-- Right Content -->
+        <div class="basis-[48%]">
+          <!-- Section Header Title Start -->
+          <div class="w-full mx-auto space-y-4">
+            <h4 class="text-primary text-lg uppercase font-semibold">
+              What Makes Us Different?
+            </h4>
+            <p class="md:text-4xl text-2xl font-semibold text-heading-text">
+              We make spending stress free so you have the perfect control.
+            </p>
+          </div>
+          <!-- Section Header Title End -->
+
+          <div class="content-box py-5">
+            <p class="text-text text-lg">
+              Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper
+              nulla non metus auctor fringilla. Morbi leo risus, porta ac
+              consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac
+              cursus. Integer posuere erat a ante venenatis dapibus posuere
+              velit.
+            </p>
+
+            <ul class="mt-8 space-y-5 list-disc text-text text-lg">
+              <li>Aenean quam ornare. Curabitur blandit.</li>
+              <li>Aenean quam ornare. Curabitur blandit.</li>
+              <li>Aenean quam ornare. Curabitur blandit.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Project Planner End -->
+
+    <!-- Testimonials Section Start -->
+    <section class="section-container">
+      <div
+        class="rounded-lg py-25 px-5 bg-gradient-to-r from-[#605DBA]/10 via-[#E6E5F4] to-primary/20"
+      >
+        <div class="flex justify-between md:flex-row flex-col gap-5">
+          <div class="basis-1/4 text-center md:text-start">
+            <h2 class="md:text-4xl text-2xl font-medium mb-3 text-heading-text">
+              We are proud of our works
+            </h2>
+            <p class="text-text text-lg">
+              We bring solutions to make life easier for our customers.
+            </p>
+          </div>
+
+          <div class="text-center space-y-2 basis-1/4">
+            <img
+              src="./assets/project.png"
+              alt=""
+              class="size-12 justify-self-center"
+            />
+            <h3 class="text-2xl md:text-4xl font-medium">1000+</h3>
+            <p class="text-lg text-text">Completed Projects</p>
+          </div>
+
+          <div class="text-center space-y-2 basis-1/4">
+            <img
+              src="./assets/growth.png"
+              alt=""
+              class="size-12 justify-self-center"
+            />
+            <h3 class="text-2xl md:text-4xl font-medium">40+</h3>
+            <p class="text-lg text-text">Reveniue Growth</p>
+          </div>
+
+          <div class="text-center space-y-2 basis-1/4">
+            <img
+              src="./assets/customer.png"
+              alt=""
+              class="size-12 justify-self-center"
+            />
+            <h3 class="text-2xl md:text-4xl font-medium">99.7%</h3>
+            <p class="text-lg text-text">Customer Satisfaction</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Customer Review -->
+      <div
+        class="customer flex flex-col md:flex-row justify-between items-center gap-10"
+      >
+        <div class="py-20 px-10 shadow-lg">
+          <p class="text-lg text-text">
+            “Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            auctor. Vestibulum id ligula porta. Cras mattis consectetur.”
+          </p>
+          <div class="pt-4 text-text">
+            <h3 class="text-heading-text font-semibold">Coriss Ambady</h3>
+            <span>Financial Analysis</span>
+          </div>
+        </div>
+
+        <div class="py-20 px-10 shadow-lg">
+          <p class="text-lg text-text">
+            “Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            auctor. Vestibulum id ligula porta. Cras mattis consectetur.”
+          </p>
+          <div class="pt-4 text-text">
+            <h3 class="text-heading-text font-semibold">Coriss Ambady</h3>
+            <span>Financial Analysis</span>
+          </div>
+        </div>
+
+        <div class="py-20 px-10 shadow-lg">
+          <p class="text-lg text-text">
+            “Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            auctor. Vestibulum id ligula porta. Cras mattis consectetur.”
+          </p>
+          <div class="pt-4 text-text">
+            <h3 class="text-heading-text font-semibold">Coriss Ambady</h3>
+            <span>Financial Analysis</span>
+          </div>
+        </div>
+
+        <div class="py-20 px-10 shadow-lg">
+          <p class="text-lg text-text">
+            “Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            auctor. Vestibulum id ligula porta. Cras mattis consectetur.”
+          </p>
+          <div class="pt-4 text-text">
+            <h3 class="text-heading-text font-semibold">Coriss Ambady</h3>
+            <span>Financial Analysis</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials Section End -->
+
+    <!-- Blog Article Start -->
+    <article class="section-container">
+      <!-- Section Header Title Start -->
+      <div class="md:w-2/3 w-full mx-auto text-center space-y-4">
+        <h4 class="text-primary text-lg uppercase font-semibold">
+          Case Studies
+        </h4>
+        <p class="md:text-4xl text-2xl font-semibold text-heading-text">
+          Check out some of our awesome projects <br />
+          with creative ideas and great design.
+        </p>
+      </div>
+      <!-- Section Header Title End -->
+      <div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper !py-20">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <img src="./assets/blog-1.png" alt="" />
+                <h3 class="pt-5 text-xl font-bold">
+                  Ligula tristique quis risus
+                </h3>
+              </div>
+              <div class="flex gap-10 mt-3">
+                <span class="date text-sm text-text">14 Apr 2022 </span>
+                <span class="catagory text-sm text-text">Coding</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./assets/blog-2.png" alt="" />
+                <h3 class="pt-5 text-xl font-bold">
+                  Ligula tristique quis risus
+                </h3>
+              </div>
+              <div class="flex gap-10 mt-3">
+                <span class="date text-sm text-text">14 Apr 2022 </span>
+                <span class="catagory text-sm text-text">Coding</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./assets/blog-3.png" alt="" />
+                <h3 class="pt-5 text-xl font-bold">
+                  Ligula tristique quis risus
+                </h3>
+              </div>
+              <div class="flex gap-10 mt-3">
+                <span class="date text-sm text-text">14 Apr 2022 </span>
+                <span class="catagory text-sm text-text">Coding</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./assets/blog-1.png" alt="" />
+                <h3 class="pt-5 text-xl font-bold">
+                  Ligula tristique quis risus
+                </h3>
+              </div>
+              <div class="flex gap-10 mt-3">
+                <span class="date text-sm text-text">14 Apr 2022 </span>
+                <span class="catagory text-sm text-text">Coding</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div>
+                <img src="./assets/blog-1.png" alt="" />
+                <h3 class="pt-5 text-xl font-bold">
+                  Ligula tristique quis risus
+                </h3>
+              </div>
+              <div class="flex gap-10 mt-3">
+                <span class="date text-sm text-text">14 Apr 2022 </span>
+                <span class="catagory text-sm text-text">Coding</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="./assets/blog-1.png" alt="" />
+                <h3 class="pt-5 text-xl font-bold">
+                  Ligula tristique quis risus
+                </h3>
+              </div>
+              <div class="flex gap-10 mt-3">
+                <span class="date text-sm text-text">14 Apr 2022 </span>
+                <span class="catagory text-sm text-text">Coding</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination !pt-20"></div>
+        </div>
+      </div>
+    </article>
+    <!-- Blog Article End -->
+
+    <!-- Company Introduce Start -->
+    <section class="section-container">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-5">
+        <!-- Left Content -->
+        <div class="basis-1/2">
+          <div class="grid grid-cols-2 gap-2">
+            <img src="./assets/grid-1.png" alt="" />
+            <img src="./assets/grid-2.png" alt="" />
+            <img src="./assets/grid-3.png" alt="" class="col-span-2" />
+          </div>
+        </div>
+        <!-- Right Content -->
+        <div class="basis-1/2">
+          <div>
+            <!-- Section Header Title Start -->
+            <div class="w-full mx-auto space-y-4">
+              <h4 class="text-primary text-lg uppercase font-semibold">
+                Who Are We?
+              </h4>
+              <p class="md:text-4xl text-2xl font-semibold text-heading-text">
+                Company that believes in the power of creative strategy.
+              </p>
+            </div>
+            <!-- Section Header Title End -->
+            <div class="content-box py-5">
+              <p class="text-text text-lg">
+                Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis
+                in, egestas eget quam. Praesent commodo cursus magna, vel
+                scelerisque nisl consectetur et. Cum sociis natoque penatibus et
+                magnis dis parturient montes, nascetur ridiculus mus. Aenean
+                lacinia bibendum nulla sed.
+              </p>
+
+              <ul class="columns-2 mt-8 space-y-5 list-disc text-text text-lg">
+                <li>Aenean quam ornare. Curabitur blandit.</li>
+                <li>Aenean quam ornare. Curabitur blandit.</li>
+                <li>Aenean quam ornare. Curabitur blandit.</li>
+                <li>Aenean quam ornare. Curabitur blandit.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Target Audience -->
+      <div class="py-20">
+        <div class="flex flex-col md:flex-row justify-between gap-5">
+          <!-- Our Vision -->
+          <div class="flex gap-3 basic-1/3">
+            <div>
+              <img src="./assets/icon-3.png" alt="" />
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-2">Our Vision</h3>
+              <p class="text-text">
+                Nulla vitae elit libero, a pharetra augue. Donec id elit non mi
+                porta gravida at eget. Fusce dapibus tellus.
+              </p>
+            </div>
+          </div>
+
+          <!-- Our Mision -->
+          <div class="flex gap-3 basic-1/3">
+            <div>
+              <img src="./assets/icon-2.png" alt="" />
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-2">Our Vision</h3>
+              <p class="text-text">
+                Nulla vitae elit libero, a pharetra augue. Donec id elit non mi
+                porta gravida at eget. Fusce dapibus tellus.
+              </p>
+            </div>
+          </div>
+
+          <!-- Our Values -->
+          <div class="flex gap-3 basic-1/3">
+            <div>
+              <img src="./assets/icon-1.png" alt="" />
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-2">Our Values</h3>
+              <p class="text-text">
+                Nulla vitae elit libero, a pharetra augue. Donec id elit non mi
+                porta gravida at eget. Fusce dapibus tellus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Company Introduce End -->
+
+    <!-- Contact Section Start -->
+    <section class="section-container">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-5">
+        <!-- Left Content -->
+        <div class="basis-1/2">
+          <img src="./assets/contact.png" alt="" />
+        </div>
+        <!-- Right Content -->
+        <div class="basis-1/2">
+          <!-- Section Header Title Start -->
+          <div class="w-full mx-auto space-y-4">
+            <h4 class="text-primary text-lg uppercase font-semibold">
+              Contact Us
+            </h4>
+            <p class="md:text-4xl text-2xl font-semibold text-heading-text">
+              Got any questions? Don't <br />
+              hesitate to get in touch.
+            </p>
+          </div>
+          <!-- Section Header Title End -->
+
+          <div class="py-8 space-y-5">
+            <div class="flex gap-5 items-center mb-5">
+              <div>
+                <img src="./assets/location.png" alt="" />
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">Address</h3>
+                <span class="text-text text-lg"
+                  >Moonshine St. 14/05 Light City, London</span
+                >
+              </div>
+            </div>
+
+            <div class="flex gap-5 items-center mb-5">
+              <div>
+                <img src="./assets/phone.png" alt="" />
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">Phone</h3>
+                <span class="text-text text-lg">00 (123) 456 78 90</span>
+              </div>
+            </div>
+
+            <div class="flex gap-5 items-center mb-5">
+              <div>
+                <img src="./assets/email.png" alt="" />
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">Email</h3>
+                <span class="text-text text-lg">sandbox@email.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Community Start -->
+    <section class="bg-white">
+      <div
+        class="section-container container mx-auto px-4 py-16 bg-[url('footer-banner.png')]"
+      >
+        <!-- Community Start -->
+        <div class="text-center md:w-4xl w-full mx-auto space-y-5">
+          <h4 class="text-lg uppercase text-primary">Join Our Community</h4>
+          <h2 class="text-2xl md:text-4xl">
+            We are trusted by over 5000+ clients. <br />
+            Join them now and grow your business.
+          </h2>
+          <a href="#" class="btn">Get Started</a>
+        </div>
+        <!-- Community End -->
+      </div>
+    </section>
+    <!-- Community End -->
+
+    <!-- Footer Section Start -->
+    <footer class="section-container">
+      <div class="grid md:grid-cols-4 grid-cols-2 gap-5">
+        <div class="space-y-5">
+          <img src="./assets/logo.png" alt="" />
+          <p class="text-text">© 2023 Sandbox. <br> All rights reserved.</p>
+        </div>
+
+        <div>
+          <div>
+            <h3 class="font-bold mb-2 text-heading-text">Get in Touch</h3>
+            <p class="text-text">Moonshine St. 14/05 Light City, London, United Kingdom</p>
+          </div>
+          <div class="flex flex-col mt-3">
+            <span class="text-text">info@email.com</span>
+            <span class="text-text">00 (123) 456 78 90</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-2 text-heading-text">Learn More</h3>
+          <ul>
+            <li><a href="#" class="text-text mb-3 inline-block">About Us</a></li>
+            <li><a href="#" class="text-text mb-3 inline-block">Our story</a></li>
+            <li><a href="#" class="text-text mb-3 inline-block">Projects</a></li>
+            <li><a href="#" class="text-text mb-3 inline-block">Term of use</a></li>
+            <li><a href="#" class="text-text mb-3 inline-block">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold mb-2 text-heading-text">Newletter</h3>
+          <p class="text-text">
+            Subscribe to our newsletter to get our news & deals delivered to
+            you.
+          </p>
+
+          <div class="pt-5">
+            <input type="email" name="" id="" placeholder="Email Address" class="shadow-sm px-2 py-4 focus:shadow-2xl focus:border-none">
+            <button class="btn">Join</button>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
